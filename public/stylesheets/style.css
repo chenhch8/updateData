@@ -1,0 +1,57 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+input, td {
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.border {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  height: 200px;
+}
+
+.border > div {
+  position: absolute;
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  left: 50%;
+  top: 50%;
+  margin: -75px 0 0 -75px;
+}
+
+.border * {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.border form, .border a {
+  display: inline-block;
+}
+
+._image_ {
+  position: fixed;
+  width: 35%;
+  height: 35%;
+  right: 0;
+  top: 20%;
+}
+._image_ img {
+  position: absolute;
+  right: 0;
+}

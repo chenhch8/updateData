@@ -1,0 +1,23 @@
+<%- include header %>
+
+<div class="container">
+    <div class="jumbotron">
+        <% for (var index = 0; index < list.Doc.length; index++) { %>
+        <div class="border">
+            <div>
+                <div class="caption"><h3><%= list.Doc[index] %></h3>
+                    <p>有<%= list.length[index] %>条记录 </p>
+                    <div>
+                        <a href="/search?searchkey=<%= list.Doc[index] %>" class="btn btn-primary" role="button">详情</a>
+                        <form action="/delete/<%= list.Doc[index] %>" method="post">
+                            <button class="btn btn-default" role="button">删除</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% } %>
+    </div>
+</div>
+
+<%- include footer %>

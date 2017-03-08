@@ -1,0 +1,78 @@
+<%- include header %>
+<div class="container">
+    <div class="jumbotron">
+        <div>
+            <form role="form" action="/update" enctype="multipart/form-data" method="post">
+                <div class="form-group">
+                    <label for="name">校区</label>
+                    <input class="form-control input-lg" name="campus" type="text" placeholder="请输入校区"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">学院</label>
+                    <input class="form-control input-lg" name="academy" type="text" placeholder="请输入学院"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">类型</label>
+                    <input class="form-control input-lg" name="plptype" type="text" placeholder="请输入类型"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">国籍</label>
+                    <input class="form-control input-lg" name="country" type="text" placeholder="请输入国籍"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">身份证/护照</label>
+                    <input class="form-control input-lg" name="idnumber" type="text" placeholder="请输入身份证/护照"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">学号/工号</label>
+                    <input class="form-control input-lg" name="stdnum" type="text" placeholder="请输入学号/工号"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">拼音/外文姓名(FullName)</label>
+                    <input class="form-control input-lg" name="fullname" type="text" placeholder="请输入拼音/外文姓名"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">拼音/外文姓(sName)</label>
+                    <input class="form-control input-lg" name="sname" type="text" placeholder="请输入拼音/外文姓"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">中文姓名</label>
+                    <input class="form-control input-lg" name="name_zh" type="text" placeholder="请输入中文姓名"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">中文姓(sName_zh)</label>
+                    <input class="form-control input-lg" name="sname_zh" type="text" placeholder="请输入中文姓"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">中文名(gName_zh)</label>
+                    <input class="form-control input-lg" name="gname_zh" type="text" placeholder="请输入中文名"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">备注/电话</label>
+                    <input class="form-control input-lg" name="remark" type="text" placeholder="请输入备注/电话"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputfile">身份证照或护照照片</label>
+                    <input id="inputfile" name="img" type="file"/>
+                </div>
+
+                <button type="submit" class="btn btn-success">提交</button>
+                <button type="reset" class="btn btn-success">重置</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include footer %>

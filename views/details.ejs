@@ -1,0 +1,95 @@
+<%- include header %>
+
+<div class="container">
+    <div class="jumbotron">
+
+        <div>
+            <form role="form" action="/modify" method="post">
+                <div class="none">
+                    <input name="_id" type="text" value="<%= _id %>"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">校区</label>
+                    <input class="form-control input-lg" name="campus" type="text" value="<%= info.campus %>"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">学院</label>
+                    <input class="form-control input-lg" name="academy" type="text" value="<%= info.academy %>"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">类型</label>
+                    <input class="form-control input-lg" name="plptype" type="text" value="<%= info.plptype %>"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">国籍</label>
+                    <input class="form-control input-lg" name="country" type="text" value="<%= info.country %>"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">身份证/护照</label>
+                    <input class="form-control input-lg" name="idnumber" type="text" value="<%= info.idnumber %>"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">学号/工号</label>
+                    <input class="form-control input-lg" name="stdnum" type="text" value="<%= info.stdnum %>"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">拼音/外文姓名(FullName)</label>
+                    <input class="form-control input-lg" name="fullname" type="text" value="<%= info.fullname %>"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">拼音/外文姓(sName)</label>
+                    <input class="form-control input-lg" name="sname" type="text" value="<%= info.sname %>"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">中文姓名</label>
+                    <input class="form-control input-lg" name="name_zh" type="text" value="<%= info.name_zh %>"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">中文姓(sName_zh)</label>
+                    <input class="form-control input-lg" name="sname_zh" type="text" value="<%= info.sname_zh %>"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">中文名(gName_zh)</label>
+                    <input class="form-control input-lg" name="gname_zh" type="text" value="<%= info.gname_zh %>"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">备注/电话</label>
+                    <input class="form-control input-lg" name="remark" type="text" value="<%= info.remark %>"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">提交时间</label>
+                    <input class="form-control input-lg" name="updateDate" type="text" value="<%= info.updateDate %>"/>
+                </div>
+
+                <% if (isNow) { %>
+                    <button type="submit" class="btn btn-success">修改</button>
+                    <button class="btn btn-success" id="back">取消</button>
+                <% } else { %>
+                    <button class="btn btn-success" id="back">返回</button>
+                <% } %>
+            </form>
+        </div>
+
+        <div class="_image_">
+            <div></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="../javascripts/detail.js" rel="type/javascript"></script>
+
+<%- include footer %>
